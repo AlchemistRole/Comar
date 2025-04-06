@@ -3,3 +3,63 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .mobile {
+        display: none;
+    }
+}
+
+header {
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    vertical-align: middle;
+    background: #2c3531;
+    color: #d1e8e2;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    height: 90%;
+}
+#logo h1 {
+    align-items: center;
+    padding-top
+    line-height: 2rem;
+}
+
+#logo h1 strong {
+    font-weight: bolder;
+}
+
+#logo img {
+    padding-right: 0.5rem;
+    height: 85%;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+header nav a  {
+    color: #d1e8e2;
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+}
