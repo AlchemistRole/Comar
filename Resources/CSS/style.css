@@ -57,7 +57,7 @@ nav ul {
 }
 
 
-header nav a  {
+header nav a {
     color: #d1e8e2;
     padding: 0 1rem 0 1rem;
     text-decoration: none;
@@ -107,13 +107,12 @@ header nav a  {
     align-items: stretch;
     width: 100%;
     gap: 1.5rem;
-    padding-top: 1rem;
+    padding: 1rem 0 2rem 0;;
 }
 
 #information {
     width: 60%;
     padding-left: 1.5rem;
-    
     display: flex;
     flex-direction: column;
 }
@@ -136,12 +135,14 @@ header nav a  {
     padding: 2rem 0;
 }
 
-#side_links {
+/* need to add dividing lines and background colours*/
+
+#side_links, #sidelink1 {
     width: 40%;
     padding-left: 1rem;
 }
 
-#side_links .Small_Info {
+#side_links .Small_Info, #sidelink1 .Small_Info {
     padding: 0.5rem 0;
 }
 
@@ -163,4 +164,89 @@ header nav a  {
     vertical-align: middle;
     justify-content: center;
     padding-left: 1rem;
+}
+
+#start_learning {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    padding: 2rem 0;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4.5rem 2rem 4.5rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* background colour for courses and for container needed ,*/
+
+#courses .course {
+    flex: 1 1 auto;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#courses .course h2 {
+    padding: 1rem;
+}
+
+#courses .course p {
+    padding: 0.5rem 1rem 1.5rem 1rem;;
+    line-height: 1.5rem;
+}
+
+#thesiscontent {
+    display: flex;
+    width: 100%;
+}
+
+#thesis .title {
+    width: 100%;
+    text-align: center;
+}
+
+#video {
+    width: 60%;
+    padding-left: 1.5rem;
+}
+
+#video .Small_Title {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#video .video_quote {
+    padding-bottom: 2rem;
+
+}
+
+footer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 1.5rem;
+    width: 100%;
+}
+
+#footer_nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 3rem;;
+}
+
+#footer_nav a {
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    color: black;
 }
