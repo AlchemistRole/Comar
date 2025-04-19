@@ -236,13 +236,16 @@ footer {
     align-items: center;
     padding: 1rem 0 1rem 1.5rem;
     width: 100%;
+    max-width: 100%;
+    box-sizing:border-box;
 }
 
 #footer_nav ul {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-right: 3rem;;
+    padding: 0;
+    overflow: hidden;
 }
 
 #footer_nav a {
