@@ -4,18 +4,19 @@ html {
     align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
     .desktop {
-        display: none;
+        display: none !important;
     }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 641px) {
     .mobile {
-        display: none;
+        display: none !important;
     }
 }
 
+/*header and nav section*/
 header {
     position: fixed;
     display: inline-flex;
@@ -63,6 +64,13 @@ header nav a {
     text-decoration: none;
 }
 
+header #navM a {
+    color: #d1e8e2;
+    justify-content: space-between;
+    padding: 0 2rem 0 1rem;
+}
+
+/*Banner section*/
 #Everyday {
     display: inline-flex;
     width: 100%;
@@ -102,6 +110,31 @@ header nav a {
     font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 640px) {
+    #Everyday img {
+        width: 100%;
+        padding: 0;
+    }
+
+    #Everyday {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Everyday .text {
+        width: 100%;
+        text-align: left;
+        padding: 0 1rem 0 1rem;
+    }
+
+    #Everyday button {
+        padding-right: 1rem;
+        width: 100%;
+    }
+}
+
+/*Information section*/
+
 #inline {
     display: flex;
     align-items: stretch;
@@ -135,7 +168,8 @@ header nav a {
     padding: 2rem 0;
 }
 
-/* need to add dividing lines and background colours*/
+/* need to add dividing lines and background colours
+Side information links*/
 
 #side_links, #sidelink1 {
     width: 40%;
@@ -166,6 +200,35 @@ header nav a {
     padding-left: 1rem;
 }
 
+@media only screen and (max-width: 640px) {
+    #inline {
+        padding: 0;
+    }
+
+    #side_links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sidelink img {
+        width: 100%;
+    }
+
+    .sidelink {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidelink .sideinfo {
+        padding: 2rem 1rem;
+        line-height: 1.5rem;
+}
+}
+
+/*courses section*/
 #start_learning {
     display: inline-flex;
     justify-content: center;
@@ -187,11 +250,33 @@ header nav a {
     gap: 2rem;
 }
 
+@media only screen and (max-width: 640px) {
+    #start_learning_mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    #start_learning_mob .title {
+        padding-bottom: 1rem;;
+    }
+
+    #start_learning_mob button {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        text-align: left;
+        }
+    }
+
 /* background colour for courses and for container needed ,*/
 
 #courses .course {
-    flex: 1 1 auto;
-    max-width: 30%;
+    flex: 0 1 calc((100% - 4rem) / 3); /* Ensure three items per row */
+    max-width: calc((100% - 4rem) / 3); /* Prevent items from growing too large */
     display: flex;
     flex-direction: column;
 }
@@ -204,6 +289,8 @@ header nav a {
     padding: 0.5rem 1rem 1.5rem 1rem;;
     line-height: 1.5rem;
 }
+
+/*thesis exhibit section*/
 
 #thesiscontent {
     display: flex;
@@ -230,6 +317,22 @@ header nav a {
 
 }
 
+@media only screen and (max-width: 640px) {
+    #thesiscontent h2, #thesiscontent p {
+        display: none;
+    }
+
+    #video {
+        width: 100%;
+        padding: 0;
+    }
+
+    #thesis {
+        padding-bottom: 1.5rem;
+    }
+}
+
+/*footer section*/
 footer {
     display: inline-flex;
     justify-content: space-between;
@@ -253,3 +356,4 @@ footer {
     text-decoration: none;
     color: black;
 }
+
