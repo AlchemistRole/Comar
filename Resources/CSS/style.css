@@ -4,6 +4,11 @@ html {
     align-items: center;
 }
 
+body {
+    font-family: "Merriweather", "OpenSans"
+}
+
+
 @media only screen and (max-width: 640px) {
     .desktop {
         display: none !important;
@@ -39,15 +44,21 @@ header {
 #logo h1 {
     align-items: center;
     line-height: 2rem;
+    font-size: 1.25rem;
 }
 
 #logo h1 strong {
-    font-weight: bolder;
+    font-weight: 900;
+}
+
+#logo h1 span {
+    font-weight: lighter;
 }
 
 #logo img {
     padding-right: 0.5rem;
     height: 85%;
+    filter: invert(1);
 }
 
 
@@ -62,12 +73,19 @@ header nav a {
     color: #d1e8e2;
     padding: 0 1rem 0 1rem;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+header nav a:hover {
+    color: #87b5a1;
 }
 
 header #navM a {
     color: #d1e8e2;
     justify-content: space-between;
     padding: 0 2rem 0 1rem;
+    filter: invert(1);
 }
 
 /*Banner section*/
@@ -75,7 +93,7 @@ header #navM a {
     display: inline-flex;
     width: 100%;
     margin-top: 4rem;
-    
+    background-color: #fff7ef;
 }
 
 #Everyday img {
@@ -88,26 +106,31 @@ header #navM a {
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    width: 25%;
-    text-align: center;
+    text-align: left;
     padding-right: 2rem;
+    font-family: "Open Sans";
 }
 
 #Everyday h1 {
     font-weight: bolder;
     padding-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-#Everyday h2 {
-    font-size: 2rem;
+#Everyday .text h2 {
+    font-size: 1.5rem;
     padding-bottom: 2rem;
 }
 
 #Everyday button {
     width: 100%;
-    height: 2.5rem;
+    font-family: "Open Sans";
     font-size: 1.25rem;
+    border: none;
+    background-color: #2C3531;
+    color: #D1E8E2;
+    border-radius: 5px;
+    padding: 0.5rem 0;
 }
 
 @media only screen and (max-width: 640px) {
