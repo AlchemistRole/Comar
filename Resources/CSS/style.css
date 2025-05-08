@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: "Merriweather", "OpenSans";
-    background-color: #DDCEBF;
+    background-color: #F6F5EC;
 }
 
 
@@ -107,30 +107,31 @@ header #navM a {
     align-items: center;
     justify-content: center;    
     text-align: left;
-    padding-right: 2rem;
+    padding: 0 4rem;
     font-family: "Open Sans";
 }
 
 #Everyday h1 {
     font-weight: bolder;
     padding-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 #Everyday .text h2 {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 0 3rem 0;
+    text-align: left;
 }
 
 #Everyday button {
     width: 100%;
     font-family: "Open Sans";
-    font-size: 1.25rem;
+    font-size: 1.85rem;
     border: none;
     background-color: #384b42;
     color: #f6edd9;
     border-radius: 5px;
-    padding: 0.5rem 0;
+    padding: 0.85rem 0;
 }
 
 @media only screen and (max-width: 640px) {
@@ -188,11 +189,11 @@ header #navM a {
 }
 
 #information h1, #start_learning .title, #thesis .title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
 }
 
 #information p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 }
 
 #information #quote-author {
