@@ -10,13 +10,13 @@ body {
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     .desktop {
         display: none !important;
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 721px) {
     .mobile {
         display: none !important;
     }
@@ -108,7 +108,7 @@ header #navM a {
     justify-content: center;    
     text-align: left;
     padding: 0 4rem;
-    font-family: "Open Sans";
+    font-family: "Merriweather";
 }
 
 #Everyday h1 {
@@ -134,7 +134,7 @@ header #navM a {
     padding: 0.85rem 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     #Everyday img {
         width: 100%;
         padding: 0;
@@ -172,7 +172,7 @@ header #navM a {
     padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
-    font-family: "Open Sans";
+    font-family: "Merriweather ";
 }
 
 #information img {
@@ -211,7 +211,7 @@ Side information links*/
 }
 
 #side_links .Small_Info, #sidelink1 .Small_Info {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 .sidelink {
@@ -234,7 +234,26 @@ Side information links*/
     padding-left: 1rem;
 }
 
-@media only screen and (max-width: 640px) {
+#side_links  h2{
+    font-size: 1.5rem;
+}
+
+#side_links h3 {
+    font-size: 1rem;
+}
+
+#side_links a {
+    transition: color 150ms linear 0s;
+    color: #384B42;
+    text-decoration: none;
+
+}
+
+#side_links a:hover {
+    color: #6c6663;
+}
+
+@media only screen and (max-width: 720px) {
     #inline {
         padding: 0;
     }
@@ -284,7 +303,7 @@ Side information links*/
     gap: 2rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     #start_learning_mob {
         display: flex;
         flex-direction: column;
@@ -351,7 +370,7 @@ Side information links*/
 
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     #thesiscontent h2, #thesiscontent p {
         display: none;
     }
