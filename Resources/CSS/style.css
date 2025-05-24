@@ -163,7 +163,8 @@ header #navM a {
     display: flex;
     align-items: stretch;
     width: 100%;
-    padding: 1rem 0 2rem 0;;
+    padding: 1rem 0 2rem 0;
+    background-color: #d2d6c8;
 }
 
 
@@ -234,11 +235,11 @@ Side information links*/
     padding-left: 1rem;
 }
 
-#side_links  h2{
+#side_links  h2, .sideinfo h2{
     font-size: 1.5rem;
 }
 
-#side_links h3 {
+#side_links h3, .sideinfo h3 {
     font-size: 1rem;
 }
 
@@ -325,7 +326,6 @@ Side information links*/
         }
     }
 
-/* background colour for courses and for container needed ,*/
 
 #courses .course {
     flex: 0 1 calc((100% - 4rem) / 3); /* Ensure three items per row */
@@ -334,20 +334,34 @@ Side information links*/
     flex-direction: column;
 }
 
-#courses .course h2 {
+#courses .course h2, #thesiscontent h2 {
     padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-#courses .course p {
+#courses .course p, #thesiscontent p {
     padding: 0.5rem 1rem 1.5rem 1rem;;
     line-height: 1.5rem;
 }
 
+.break {
+    display: block;
+    height: 0.5rem;
+}
+
+.course {
+    background-color: #CEBB9C;
+}
 /*thesis exhibit section*/
+#thesis {
+    background: #d2d6c8;
+}
 
 #thesiscontent {
     display: flex;
     width: 100%;
+    
 }
 
 #thesis .title {
@@ -368,6 +382,10 @@ Side information links*/
 #video .video_quote {
     padding-bottom: 2rem;
 
+}
+
+#sidelink1 .Small_Info {
+    padding-left: 0.85rem;
 }
 
 @media only screen and (max-width: 720px) {
@@ -394,6 +412,8 @@ footer {
     width: 100%;
     max-width: 100%;
     box-sizing:border-box;
+    background-color: #79857B;
+    font-size: 0.75rem;
 }
 
 #footer_nav ul {
@@ -402,11 +422,13 @@ footer {
     gap: 1rem;
     padding: 0;
     overflow: hidden;
+    
 }
 
 #footer_nav a {
     padding: 0 1rem 0 1rem;
     text-decoration: none;
     color: black;
+    font-size: 0.75rem;
 }
 
